@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Proposal ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        
+        .card {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            animation: fadeIn 2s ease;
+        }
+        
+        h1 {
+            color: #e63946;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .heart {
+            font-size: 3em;
+            animation: beat 1.2s infinite;
+            color: #e63946;
+            margin: 20px 0;
+        }
+        
+        button {
+            background: #e63946;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        
+        button:hover {
+            background: #d62839;
+            transform: scale(1.1);
+        }
+        
+        @keyframes beat {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Floating hearts */
+        
+        .floating-heart {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 20px;
+            animation: float 8s linear infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="floating-heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="floating-heart" style="left:20%; animation-delay:0s;">🌸</div>
+    <div class="floating-heart" style="left:30%; animation-delay:2s;">❤️</div>
+    <div class="floating-heart" style="left:40%; animation-delay:2s;">🌸</div>
+    <div class="floating-heart" style="left:50%; animation-delay:4s;">❤️</div>
+    <div class="floating-heart" style="left:60%; animation-delay:4s;">🌸</div>
+    <div class="floating-heart" style="left:70%; animation-delay:1s;">❤️</div>
+    <div class="floating-heart" style="left:80%; animation-delay:1s;">🌸</div>
+    <div class="floating-heart" style="left:90%; animation-delay:3s;">❤️</div>
+    <div class="floating-heart" style="left:100%; animation-delay:3s;">🌸</div>
+
+    <div class="card">
+        <h1>My Love</h1>
+        <p>
+            From the moment you walked into my life, everything became brighter, warmer, and more meaningful.
+        </p>
+
+        <div class="heart">❤️</div>
+
+        <p>
+            I can’t imagine my future without you in it. So today, with all my heart…
+        </p>
+
+        <h1>Will You Marry Me?</h1>
+
+        <button>Yes, Forever 💍</button>
+    </div>
+
+</body>
+
+</html>
